@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+* {
+  font-family: "Sriracha", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.links:hover {
+  color: #dc3545;
+}
+.book-img {
+  background-color: azure;
+  border: 1px solid #ff5c58;
+  border-radius: 15px;
+}

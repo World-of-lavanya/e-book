@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+* {
+  font-family: "Sriracha", sans-serif;
+}
+.container-book {
+  min-height: 90vh;
+}
+.section-book .book-img {
+  background-color: azure;
+  border: 1px solid #ff5c58;
+}
+
+.section-book .card-book img {
+  cursor: pointer;
+}
+
+.section-book .card-book .card-details {
+  display: none;
+}
+.card-details p {
+  text-align: start;
+}
+.search-title {
+  padding: 1vh 1vw;
+}
+a {
+  text-decoration: none;
+}
+.links:hover {
+  color: #dc3545;
+}
+
+/* Loading Animation CSS */
+
+.animation-container {
+  height: 40vh;
+  width: 100vw;
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  position: fixed;
+  margin: 6rem 10rem 0 0;
+}
+.circle {
+  transition: 5s;
+  transform: none;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 5s infinite;
+}
+.rev-circle {
+  transition: 5s;
+  transform: none;
+  margin-left: 6rem;
+  margin-top: 7rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  animation: rev-rotate 5s infinite;
+}
+.notfound {
+  display: none;
+  min-height: 40vh;
+}
+@keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rev-rotate {
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
